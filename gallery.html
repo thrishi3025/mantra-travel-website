@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery | Aetheria Expeditions</title>
+  
+  <!-- Basic SEO Meta Tags -->
+  <meta name="description" content="Browse breathtaking travel photography from Aetheria Expeditions. View high-resolution photos of Taj Mahal, Goa beaches, Kerala houseboats, and luxury glamping.">
+  <meta name="keywords" content="travel gallery, luxury travel photos, landscape photography, Taj Mahal photo, Kerala backwaters photo, Goa sailing, travel pictures india">
+  <meta name="author" content="Student Name">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo">
+        <h2>Aetheria<span>.</span></h2>
+      </a>
+      
+      <nav>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Book Stay</a></li>
+        </ul>
+      </nav>
+      
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- SUBPAGE HERO -->
+    <section class="sub-hero" style="background-image: url('images/hero-home.jpg');">
+      <div class="sub-hero-overlay"></div>
+      <div class="sub-hero-content">
+        <h1>Expedition Gallery</h1>
+        <p>A window into the world's most remote, historic, and beautiful corners</p>
+      </div>
+    </section>
+
+    <!-- GALLERY GRID & FILTERS -->
+    <section class="section-padding">
+      <div class="container">
+        
+        <!-- Filter Tabs -->
+        <div class="gallery-filter">
+          <button class="filter-btn active" data-filter="all">All Photos</button>
+          <button class="filter-btn" data-filter="heritage">Heritage</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+          <button class="filter-btn" data-filter="coastal">Coastal</button>
+        </div>
+        
+        <!-- Responsive Grid -->
+        <div class="gallery-grid" id="gallery-grid">
+          <!-- Item 1: Taj Mahal -->
+          <div class="gallery-item" data-category="heritage" data-src="images/tajmahal.jpg" data-caption="The white marble domes of the Taj Mahal in Agra, India, reflecting in the central garden water channels">
+            <img src="images/tajmahal.jpg" alt="Taj Mahal dome reflected in the garden water canal">
+            <div class="gallery-hover">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Taj Mahal Palace</h4>
+              <p>Agra, India</p>
+            </div>
+          </div>
+          
+          <!-- Item 2: Kerala -->
+          <div class="gallery-item" data-category="nature" data-src="images/kerala.jpg" data-caption="A luxury wooden houseboat Kettuvallam cruising down the palm-lined backwaters of Alleppey, Kerala">
+            <img src="images/kerala.jpg" alt="Houseboat in the lush green palm tree backwaters of Kerala">
+            <div class="gallery-hover">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Kerala Backwaters</h4>
+              <p>Alleppey, India</p>
+            </div>
+          </div>
+          
+          <!-- Item 3: Goa -->
+          <div class="gallery-item" data-category="coastal" data-src="images/goa-beach.jpg" data-caption="Sunlight filtering through coconut palm trees on a quiet, sandy beach in South Goa">
+            <img src="images/goa-beach.jpg" alt="Pristine beach with palm trees and blue water in Goa">
+            <div class="gallery-hover">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Pristine Goa Coast</h4>
+              <p>Goa, India</p>
+            </div>
+          </div>
+          
+          <!-- Item 4: Safari Tent (Nature / Heritage) -->
+          <div class="gallery-item" data-category="nature" data-src="images/hero-about.jpg" data-caption="A luxurious safari glamping canvas tent illuminated with warm lanterns under a starry sky">
+            <img src="images/hero-about.jpg" alt="A warm, glowing glamping safari tent pitched in the wilderness under the Milky Way">
+            <div class="gallery-hover">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Luxury Base Camp</h4>
+              <p>Thar Desert, India</p>
+            </div>
+          </div>
+          
+          <!-- Item 5: Fjord/Himalayas (Nature) -->
+          <div class="gallery-item" data-category="nature" data-src="images/hero-home.jpg" data-caption="Mist-covered mountain peaks reflecting perfectly in a serene glacier lake during sunrise in the Himalayas">
+            <img src="images/hero-home.jpg" alt="A traveler standing on a cliff edge looking out over a massive mountain valley lake at sunrise">
+            <div class="gallery-hover">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Himalayan Sunrise</h4>
+              <p>Ladakh, India</p>
+            </div>
+          </div>
+          
+          <!-- Item 6: Tour Leader (Nature / Heritage) -->
+          <div class="gallery-item" data-category="nature" data-src="images/tour-leader.jpg" data-caption="An Aetheria expedition leader smiling in alpine trekking gear against a snowy peak backdrop">
+            <img src="images/tour-leader.jpg" alt="Smiling female outdoor guide with a climbing rope and backpack in alpine peaks">
+            <div class="gallery-hover">
+              <i class="fa-solid fa-magnifying-glass-plus"></i>
+              <h4>Expedition Leader</h4>
+              <p>Himalayan Base Camp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LIGHTBOX OVERLAY MODAL -->
+    <div class="lightbox" id="lightbox">
+      <span class="lightbox-close" id="lightbox-close">&times;</span>
+      
+      <button class="lightbox-nav lightbox-prev" id="lightbox-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </button>
+      
+      <div class="lightbox-content">
+        <img src="" alt="" id="lightbox-img">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+      
+      <button class="lightbox-nav lightbox-next" id="lightbox-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </button>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-col">
+        <h3>Aetheria<span>.</span></h3>
+        <p>Crafting deeply immersive, luxury travel experiences for adventurers who seek connection, authenticity, and environmental responsibility.</p>
+        <div class="footer-socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="packages.html">Travel Packages</a></li>
+          <li><a href="gallery.html">Photo Gallery</a></li>
+          <li><a href="contact.html">Book / Inquire</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Destinations</h3>
+        <ul class="footer-links">
+          <li><a href="packages.html">Agra & Taj Mahal</a></li>
+          <li><a href="packages.html">Kerala Backwaters</a></li>
+          <li><a href="packages.html">Goa Yacht Cruise</a></li>
+          <li><a href="packages.html">Custom Expedition</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-col">
+        <h3>Contact Us</h3>
+        <ul class="footer-contact">
+          <li>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Taj Mahal Palace Area, Suite 10, Agra, UP 282001</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 (11) 555-0199</span>
+          </li>
+          <li>
+            <i class="fa-solid fa-envelope"></i>
+            <span>designer@aetheriaexpeditions.com</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Aetheria Expeditions. Designed for MANTRA Summer School. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>

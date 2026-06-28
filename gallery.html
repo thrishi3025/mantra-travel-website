@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Photo Gallery | Aetheria Expeditions</title>
   
-  <!-- Basic SEO Meta Tags -->
   <meta name="description" content="Browse breathtaking travel photography from Aetheria Expeditions. View high-resolution photos of Taj Mahal, Goa beaches, Kerala houseboats, and luxury glamping.">
   <meta name="keywords" content="travel gallery, luxury travel photos, landscape photography, Taj Mahal photo, Kerala backwaters photo, Goa sailing, travel pictures india">
-  <meta name="author" content="Student Name">
+  <meta name="author" content="Thota.Thrishika">
   
-  <!-- Stylesheet -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAVIGATION HEADER -->
   <header class="header" id="header">
     <div class="container nav-wrapper">
       <a href="index.html" class="logo">
@@ -42,8 +39,7 @@
   </header>
 
   <main>
-    <!-- SUBPAGE HERO -->
-    <section class="sub-hero" style="background-image: url('images/hero-home.jpg');">
+    <section class="sub-hero" style="background-image: url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=1600&auto=format&fit=crop');">
       <div class="sub-hero-overlay"></div>
       <div class="sub-hero-content">
         <h1>Expedition Gallery</h1>
@@ -51,11 +47,9 @@
       </div>
     </section>
 
-    <!-- GALLERY GRID & FILTERS -->
     <section class="section-padding">
       <div class="container">
         
-        <!-- Filter Tabs -->
         <div class="gallery-filter">
           <button class="filter-btn active" data-filter="all">All Photos</button>
           <button class="filter-btn" data-filter="heritage">Heritage</button>
@@ -63,11 +57,10 @@
           <button class="filter-btn" data-filter="coastal">Coastal</button>
         </div>
         
-        <!-- Responsive Grid -->
         <div class="gallery-grid" id="gallery-grid">
-          <!-- Item 1: Taj Mahal -->
-          <div class="gallery-item" data-category="heritage" data-src="images/tajmahal.jpg" data-caption="The white marble domes of the Taj Mahal in Agra, India, reflecting in the central garden water channels">
-            <img src="images/tajmahal.jpg" alt="Taj Mahal dome reflected in the garden water canal">
+          
+          <div class="gallery-item" data-category="heritage" data-src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800&auto=format&fit=crop" data-caption="The white marble domes of the Taj Mahal in Agra, India, reflecting in the central garden water channels">
+            <img src="https://images.unsplash.com/photo-1564507592333-c60657eea523?q=80&w=800&auto=format&fit=crop" alt="Taj Mahal dome reflected in the garden water canal">
             <div class="gallery-hover">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
               <h4>Taj Mahal Palace</h4>
@@ -75,9 +68,8 @@
             </div>
           </div>
           
-          <!-- Item 2: Kerala -->
-          <div class="gallery-item" data-category="nature" data-src="images/kerala.jpg" data-caption="A luxury wooden houseboat Kettuvallam cruising down the palm-lined backwaters of Alleppey, Kerala">
-            <img src="images/kerala.jpg" alt="Houseboat in the lush green palm tree backwaters of Kerala">
+          <div class="gallery-item" data-category="nature" data-src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=800&auto=format&fit=crop" data-caption="A luxury wooden houseboat Kettuvallam cruising down the palm-lined backwaters of Alleppey, Kerala">
+            <img src="https://images.unsplash.com/photo-1602216056096-3b40cc0c9944?q=80&w=800&auto=format&fit=crop" alt="Houseboat in the lush green palm tree backwaters of Kerala">
             <div class="gallery-hover">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
               <h4>Kerala Backwaters</h4>
@@ -85,9 +77,8 @@
             </div>
           </div>
           
-          <!-- Item 3: Goa -->
-          <div class="gallery-item" data-category="coastal" data-src="images/goa-beach.jpg" data-caption="Sunlight filtering through coconut palm trees on a quiet, sandy beach in South Goa">
-            <img src="images/goa-beach.jpg" alt="Pristine beach with palm trees and blue water in Goa">
+          <div class="gallery-item" data-category="coastal" data-src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=800&auto=format&fit=crop" data-caption="Sunlight filtering through coconut palm trees on a quiet, sandy beach in South Goa">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?q=80&w=800&auto=format&fit=crop" alt="Pristine beach with palm trees and blue water in Goa">
             <div class="gallery-hover">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
               <h4>Pristine Goa Coast</h4>
@@ -95,40 +86,39 @@
             </div>
           </div>
           
-          <!-- Item 4: Safari Tent (Nature / Heritage) -->
-          <div class="gallery-item" data-category="nature" data-src="images/hero-about.jpg" data-caption="A luxurious safari glamping canvas tent illuminated with warm lanterns under a starry sky">
-            <img src="images/hero-about.jpg" alt="A warm, glowing glamping safari tent pitched in the wilderness under the Milky Way">
+<!-- Item 4: Jaipur Palace (Bottom Left) -->
+          <div class="gallery-item" data-category="culture" data-src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?q=80&w=800&auto=format&fit=crop" data-caption="The intricate pink sandstone facade of the Hawa Mahal (Palace of Winds) in Jaipur, Rajasthan">
+            <img src="https://images.unsplash.com/photo-1603262110263-fb0112e7cc33?q=80&w=800&auto=format&fit=crop" alt="The magnificent pink architecture of the Hawa Mahal palace under a clear sky">
             <div class="gallery-hover">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
-              <h4>Luxury Base Camp</h4>
-              <p>Thar Desert, India</p>
+              <h4>Hawa Mahal Palace</h4>
+              <p>Jaipur, India</p>
             </div>
           </div>
-          
-          <!-- Item 5: Fjord/Himalayas (Nature) -->
-          <div class="gallery-item" data-category="nature" data-src="images/hero-home.jpg" data-caption="Mist-covered mountain peaks reflecting perfectly in a serene glacier lake during sunrise in the Himalayas">
-            <img src="images/hero-home.jpg" alt="A traveler standing on a cliff edge looking out over a massive mountain valley lake at sunrise">
+
+          <!-- Item 5: Himalayan Sunrise (Bottom Middle) -->
+          <div class="gallery-item" data-category="nature" data-src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" data-caption="Mist-covered mountain peaks reflecting perfectly in a serene glacier lake during sunrise in the Himalayas">
+            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" alt="A traveler standing on a cliff edge looking out over a massive mountain valley lake at sunrise">
             <div class="gallery-hover">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
               <h4>Himalayan Sunrise</h4>
               <p>Ladakh, India</p>
             </div>
           </div>
-          
-          <!-- Item 6: Tour Leader (Nature / Heritage) -->
-          <div class="gallery-item" data-category="nature" data-src="images/tour-leader.jpg" data-caption="An Aetheria expedition leader smiling in alpine trekking gear against a snowy peak backdrop">
-            <img src="images/tour-leader.jpg" alt="Smiling female outdoor guide with a climbing rope and backpack in alpine peaks">
+
+<!-- Item 6: Expedition Leader -->
+          <div class="gallery-item" data-category="nature" data-src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop" data-caption="An Aetheria luxury safari guide tracking wildlife during a private outdoor expedition in India">
+            <img src="https://images.unsplash.com/photo-1448375240586-882707db888b?q=80&w=800&auto=format&fit=crop" alt="Close up of hiking boots walking down a pristine wilderness path">
             <div class="gallery-hover">
               <i class="fa-solid fa-magnifying-glass-plus"></i>
               <h4>Expedition Leader</h4>
-              <p>Himalayan Base Camp</p>
+              <p>Wilderness Safari</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- LIGHTBOX OVERLAY MODAL -->
     <div class="lightbox" id="lightbox">
       <span class="lightbox-close" id="lightbox-close">&times;</span>
       
@@ -147,7 +137,6 @@
     </div>
   </main>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-grid">
       <div class="footer-col">
@@ -210,7 +199,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="js/script.js"></script>
 </body>
 </html>
